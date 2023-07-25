@@ -2,7 +2,7 @@
 
 descriptif du site :
 
-Étape 1 : Créez la page de présentation des travaux partir du HTML existant
+Étape 1 : Créez la page de présentation des travaux partir du HTML existant => en cours
 
 Étape 1.1 : Récupération des travaux depuis le back-end
 Étape 2 : Codez la page de connexion
@@ -13,7 +13,7 @@ descriptif du site :
 
 Étape 3 : Ajoutez la modale
 
-Étape 3.1 : Ajout de la fenêtre modale => en cours
+Étape 3.1 : Ajout de la fenêtre modale 
 
 Étape 3.2 : Suppression de travaux existants
 
