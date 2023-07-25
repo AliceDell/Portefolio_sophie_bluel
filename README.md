@@ -1,4 +1,5 @@
-# Portefolio_sophie_bluel
+# Projet OpenClassrom => Portefolio Sophie Bluel
+
 descriptif du site :
 
 Étape 1 : Créez la page de présentation des travaux partir du HTML existant
