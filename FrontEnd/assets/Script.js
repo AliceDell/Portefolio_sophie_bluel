@@ -14,3 +14,12 @@ async function getAllCategories ()
 }
 
 // etape 2 => formatage json vers html 
+
+function formatCategories (categoriesToFormat)
+{
+    const buttons = document.getElementById ("buttons");
+  for (const categoryToFormat of categoriesToFormat) 
+    {
+
+    }    
+}      
