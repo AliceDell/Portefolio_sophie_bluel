@@ -1,29 +1,36 @@
 // Function => récupérer toutes les catégories
 async function getAllCategories() {
-  const result = await fetch(apiCategories).then(async function (c){
-    return c.json();
-  });
-  return result;
+  try {
+    const response = await fetch(apiCategories);
+    const categories = await response.json();
+    return categories;
+  } catch (error) {
+    console.error("Erreur lors de la récupération des catégories :", error);
+    return [];
+  }
 }
 
-//function Afficher les boutons
+// function Afficher les boutons
 function displayButtons(categories) {
-  const buttons = document.getElementById("buttons");
-  console.log(categories);
+  const buttonsContainer = document.getElementById("buttons");
   for (const category of categories) {
-    buttons.insertAdjacentHTML("beforeend",
+    buttonsContainer.insertAdjacentHTML("beforeend",
       `<button class="button" data-id="${category.id}">
         ${category.name}
-        </button>
-    `) 
+      </button>`
+    );
   }
-  
-} 
-//variables
-const galery = document.getElementsByClassName("gallery");
-const url = 'http://localhost:5678/api/';
-const apiWorks = url + "works";
-const apiCategories = url + "categories";
-//________________________________________
+}
 
-displayButtons(getAllCategories()); 
+// Variables
+const apiURL = 'http://localhost:5678/api/';
+const apiWorks = apiURL + "works";
+const apiCategories = apiURL + "categories";
+
+// Point d'entrée
+async function initialize() {
+  const categories = await getAllCategories();
+  displayButtons(categories);
+}
+
+initialize();
