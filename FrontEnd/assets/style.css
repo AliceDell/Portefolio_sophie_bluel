@@ -190,7 +190,7 @@ footer nav ul {
 
 /*------Bouton filtres-------------*/
 
-.buttons {
+#buttons {
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 2%;
