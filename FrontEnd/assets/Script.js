@@ -22,6 +22,23 @@ function displayButtons(categories) {
   }
 }
 
+//function afficher tout les works :
+function displayAllWorks(works) {
+  const allGallery = document.getElementsByClassName("gallery")[0]; 
+  for (const galleryWork of works) {
+    allGallery.insertAdjacentHTML("beforeend",
+      `<figure data-id="${galleryWork.categoryId}">
+        <img
+          src="${galleryWork.imageUrl}"
+        alt="${galleryWork.title}" />
+        <figcaption>${galleryWork.title}"</figcaption>
+      </figure>
+    `)
+    
+  }
+
+}
+
 // Variables
 const apiURL = 'http://localhost:5678/api/';
 const apiWorks = apiURL + "works";
