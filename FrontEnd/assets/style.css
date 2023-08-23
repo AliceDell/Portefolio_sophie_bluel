@@ -127,7 +127,7 @@ li:hover {
 	text-align: center;
 	margin-bottom: 1em;
 }
-.gallery {
+#gallery {
 	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -135,7 +135,7 @@ li:hover {
 	grid-row-gap: 20px;
 }
 
-.gallery img {
+#gallery img {
 	width: 100%;
 
 }
@@ -197,7 +197,7 @@ footer nav ul {
 	justify-content: center;
   }
   
-  .button {
+  .category {
 	font-family: "Syne";
 	min-width: 8%;
 	height: 34px;
@@ -208,11 +208,11 @@ footer nav ul {
 	margin-right: 1%;
   }
   
-  .button p {
+  .category p {
 	padding: 4px;
   }
   
-  .button:hover {
+  .category:hover {
 	background-color: #1d6154;
 	color: white;
 	border: 1px solid #1d6154;

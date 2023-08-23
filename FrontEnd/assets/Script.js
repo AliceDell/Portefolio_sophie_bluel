@@ -27,7 +27,7 @@ function displayButtons(categories) {
   const buttonsContainer = document.getElementById("buttons");
   for (const category of categories) {
     buttonsContainer.insertAdjacentHTML("beforeend",
-      `<button class="button" data-id="${category.id}">
+      `<button class="category" data-id="${category.id}">
         ${category.name}
       </button>`
     );
@@ -36,7 +36,7 @@ function displayButtons(categories) {
 
 // Fonction pour afficher tous les works
 async function displayAllWorks() {
-  const allGallery = document.getElementsByClassName("gallery")[0];
+  const allGallery = document.getElementById("gallery");
   const works = await getAllWorks();
   
   for (const galleryWork of works) {
@@ -49,6 +49,12 @@ async function displayAllWorks() {
       </figure>`
     );
   }
+}
+
+//récupérer tout les boutons + filtre
+function setEvents(){
+  document.querySelectorAll("button.category");
+  const buttonTous = "";
 }
 
 // Variables
@@ -68,3 +74,6 @@ async function initialize() {
 }
 
 initialize();
+
+
+
