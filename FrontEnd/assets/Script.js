@@ -53,9 +53,16 @@ async function displayAllWorks() {
 
 //récupérer tout les boutons + filtre
 function setEvents(){
-  document.querySelectorAll("button.category");
-  const buttonTous = "";
+  const buttons = document.querySelectorAll("button.category") ;
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      
+      
+    });
+  });
+  console.log(buttons);
 }
+
 
 // Variables
 const apiURL = 'http://localhost:5678/api/';
